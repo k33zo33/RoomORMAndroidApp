@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_10dp">
+
+        <ImageView
+            tools:src="@mipmap/ic_launcher"
+            android:id="@+id/ivImage"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_300dp"/>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/_20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="@string/date"
+                android:textSize="@dimen/_24sp"
+                android:textColor="?colorOnPrimary"
+                android:textStyle="bold"
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tvDate"
+                android:textSize="@dimen/_24sp"
+                android:textStyle="bold"
+                android:layout_weight="3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/_20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="@string/first_name"
+                android:textSize="@dimen/_24sp"
+                android:textColor="?colorOnPrimary"
+                android:textStyle="bold"
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/etFirst"
+                android:textSize="@dimen/_24sp"
+                android:textStyle="bold"
+                android:layout_weight="3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/_20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="@string/last_name"
+                android:textSize="@dimen/_24sp"
+                android:textColor="?colorOnPrimary"
+                android:textStyle="bold"
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/etLast"
+                android:textSize="@dimen/_24sp"
+                android:textStyle="bold"
+                android:layout_weight="3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/_20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="@string/role"
+                android:textSize="@dimen/_24sp"
+                android:textColor="?colorOnPrimary"
+                android:textStyle="bold"
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+
+            <Spinner
+                android:id="@+id/spinnerRole"
+                android:layout_weight="3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+
+        
+        <Button
+            android:layout_marginTop="@dimen/_20dp"
+            android:id="@+id/btnCommit"
+            android:text="@string/commit"
+            android:textColor="@color/white"
+            android:layout_gravity="end"
+            android:backgroundTint="?colorOnPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</ScrollView>
